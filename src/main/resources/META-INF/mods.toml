@@ -1,0 +1,27 @@
+modLoader="javafml" #mandatory
+loaderVersion="[40,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
+license="All rights reserved"
+[[mods]] #mandatory
+modId="p_artifacts" #mandatory
+version="${file.jarVersion}" #mandatory
+displayName="Primórdios - Artifacts" #mandatory
+logoFile="p_artifacts.png" #optional
+authors="LunazStudios"
+
+description='''
+Primórdios - Artifacts is a Mod that adds unique artifacts for lore content related.
+'''
+[[dependencies.p_artifacts]] #optional
+    modId="forge" #mandatory
+    mandatory=true #mandatory
+    versionRange="[40,)" #mandatory
+    ordering="NONE"
+    side="BOTH"
+# Here's another dependency
+[[dependencies.p_artifacts]]
+    modId="minecraft"
+    mandatory=true
+# This version range declares a minimum of the current minecraft version up to but not including the next major version
+    versionRange="[1.18.2,1.19)"
+    ordering="NONE"
+    side="BOTH"
